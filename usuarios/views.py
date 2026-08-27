@@ -1,3 +1,11 @@
 from django.shortcuts import render
 
-# Create your views here.
+from django.http import HttpResponse
+
+
+def inicio(request):
+    return HttpResponse("Bienvenido a la aplicación de Usuarios")
+
+
+def informacion(request):
+    return HttpResponse("Esta es la página de información de Usuarios")
